@@ -19,3 +19,18 @@ var map = (arr, fn) => {
     }
     return transformedArr;
 };
+
+// This is also day 5?
+
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var filter = (arr, fn) => {
+    let filteredArr = [];
+    for(let i=0;i<arr.length;i++){
+        if(fn(arr[i],i)) filteredArr.push(arr[i]);
+    }
+    return filteredArr;
+};
